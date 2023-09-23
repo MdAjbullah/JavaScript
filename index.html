@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom_1</title>
+    
+
+</head>
+<body>
+    <p id="one"> <span>namasate</span></p>
+    <!-- by tag name  -->
+    <h4>hay</h4>
+    <h4>namsate</h4>
+    <h4>hola</h4>
+    <!-- class -->
+    <ul>
+       <li class="tech">one</li>
+       <li class="tech">two</li>
+       <li class="tech">three</li>
+
+    </ul>
+    <!-- qury selector -->
+    <h2>hellow</h2>
+    <h2 class="classs">jh</h2>
+    <h2 id="md">iuuiu</h2>
+
+
+    
+</body>
+<script>
+   let var1=document.getElementById("one");
+   console.log(var1.innerText);
+   let var2= document.getElementsByClassName("tech");
+   console.log(var2[2].innerText);
+   var2[2].innerText="mdajbullah";
+   //<!-- by tag name  -->
+let var3=document.getElementsByTagName("h4");
+   console.log(var3[2].innerText);
+   var3[2].innerText="mdajbullah";
+   var3[2].style.color="red";
+  // <!-- query selector -->
+let var4=document.querySelectorAll(".classs");
+
+   console.log(var4);
+
+  // <!-- var4.ClassName="hellwow"; -->
+  var4.ClassList="hellow hela hola";
+
+  var4.setAttribute("id","raju");
+  
+
+
+</script>
+</html>
