@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>open</title>
+</head>
+<body>
+	<button onclick="openwin()"> open new window</button>
+	<button onclick="closewin()"> close new window</button>
+
+</body>
+<script type="text/javascript">
+	var win;
+	function openwin(){
+		win=window.open("http://www.gogle.com");
+	}
+	function closewin(){
+		win.close();
+
+	}
+</script>
+</html>

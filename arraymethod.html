@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 id="res"></h1>
+    <button onclick="POP()">POP</button>
+    <button onclick="PUSH()">PUSH</button>
+    <button onclick="slice()">slice</button>
+    <button onclick="reverse()">reverse</button>
+    <button onclick="shift()">shift</button>
+</head>
+
+<body>
+
+</body>
+<script>
+    var fruit = ["apple", "banana", "mango", "orange"];
+    var demo = fruit;
+    document.getElementById('res').innerHTML = fruit;
+
+    function POP() {
+        demo.pop();
+        document.getElementById('res').innerHTML = fruit;
+    }
+
+    function PUSH() {
+        var x = prompt("please enter the frouit");
+        demo.push(x);
+        document.getElementById('res').innerHTML = fruit;
+    }
+
+    function slice() {
+        var x = demo.slice(1); // nikalna kisi postision ke nam de ke 
+        document.getElementById('res').innerHTML = x;
+
+    }
+
+    function reverse() {
+        var x = demo.reverse();
+        document.getElementById('res').innerHTML = demo;
+    }
+
+    function shift() {
+        var x = demo.shift();
+        document.getElementById('res').innerHTML = x;
+    }
+</script>
+
+</html>

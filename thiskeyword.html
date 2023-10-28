@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>this</title>
+</head>
+<body>
+
+</body><script type="text/javascript">
+	//var x=this;
+	//document.write(x)
+	var x={
+		firstnamr:"md",
+		secondname:"ajbullah"
+		fullname: function () {
+			return this.firstname+this.lastname;
+			// body...
+		}
+
+	};
+	document.write(x.fullname());
+</script>
+</html>

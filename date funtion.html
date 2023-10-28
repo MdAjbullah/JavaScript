@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date funtion</title>
+</head>
+
+<body>
+    <h1 id="res"></h1>
+    <button onclick="getdate()">date</button>
+    <button onclick="getfullyear()">fulldate</button>
+    <button onclick="getday()">day</button>
+    <button onclick="getmonth()">month</button>
+    <button onclick="getminut()">minut</button>
+    <button onclick="milisecond()">millisecond</button>
+
+</body>
+<script>
+    var date = new Date();
+
+    function getdate() {
+        document.getElementById("res").innerText = date;
+    }
+
+    function getfullyear() {
+        document.getElementById("res").innerText = date.getFullYear();
+    }
+
+    function getday() {
+        document.getElementById("res").innerText = date.getDay();
+
+    }
+
+    function getmonth() {
+        document.getElementById("res").innerText = date.getMonth();
+    }
+
+    function getminut() {
+        document.getElementById("res").innerText = date.getminut();
+    }
+
+    function getmillisecond() {
+        document.getElementById("res").innerText = date.getmillisecond();
+    }
+</script>
+
+</html>

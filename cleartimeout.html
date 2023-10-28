@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>i</title>
+</head>
+<body>
+	<button onclick="start()"> start</button>
+	<button onclick="stop()">stop</button>
+
+</body>
+<script type="text/javascript">
+	var my;
+	function start(){
+		ny =setTimeout(
+			function(){
+				document.write("<h1>MD BABLI</h1>")
+
+
+			},
+			5000
+			)
+
+
+	}
+	function stop(){
+		clearTimeout(my);
+		alert("stoptime out ");
+
+	}
+</script>
+</html>

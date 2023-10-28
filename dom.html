@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="" name="u_name">
+    <button onclick="getname()"> submit</button>
+    <h1></h1>
+
+</body>
+<script type="text/javascript">
+    function getname() {
+        var uname = document.getElementsByName('u_name')[0].value;
+        document.getElementsByName('u_name')[0].value = "";
+
+        document.getElementsByTagName("h1")[0].innerHTML = uname;
+    }
+</script>
+
+</html>
